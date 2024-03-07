@@ -22,7 +22,7 @@ document.getElementById('rhombus-area-calc-btn').addEventListener('click',functi
             </span> </span>
           </div>`;
           document.getElementById('area-calculation-container').appendChild(areaCalc);
-            document.getElementById('calculation-rhombus-area').innerText =  rhombusD1 * rhombusD2;
+            document.getElementById('calculation-rhombus-area').innerText =  rhombusD1 * .5 * rhombusD2;
         } else{
             const areaCalc = document.createElement('div');
             areaCalc.setAttribute('id', 'rhombus-exist-checker')
