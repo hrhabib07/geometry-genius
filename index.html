@@ -21,11 +21,13 @@
                       <h2 class="card-title">Triangle</h2>
                       <p>Area = 0.5 x b x h</p>
                       <div class="flex gap-3">
-                        <input id="triangle-base" class="block rounded p-2 " type="number" placeholder="base in cm"> 
-                      <input id="triangle-height" class="block rounded p-2 " type="number" placeholder="height in cm">
+                        <input  class="w-28 block rounded p-2 " id="triangle-base" type="number" placeholder="base in cm"> 
+                      <input id="triangle-height" class="w-28 block rounded p-2 " type="number" placeholder="height in cm">
                       </div>
                       <p>Area : <span id="triangle-area">0</span><span> cm<sup>2</sup></span></p>
-                      <button id="triangle-area-btn" class="btn btn-accent">Calculate</button>
+                      <div class="flex justify-center">
+                        <button id="triangle-area-btn" class="w-28 btn btn-accent">Calculate</button>
+                      </div>
 
                     </div>
                   </div>
@@ -36,11 +38,13 @@
                       <h2 class="card-title">Rectangle</h2>
                       <p>Area = w x l</p>
                       <div class="flex gap-3">
-                        <input class="block rounded p-2 " type="number" placeholder="width in cm">
-                      <input class="block rounded p-2 " type="number" placeholder="length in cm">
+                        <input class="w-28 block rounded p-2 " type="number" placeholder="width in cm">
+                      <input class="w-28 block rounded p-2 " type="number" placeholder="length in cm">
                       </div>
                       <p>Area : <span>0</span><span> cm<sup>2</sup></span></p>
-                      <button class="btn btn-accent">Calculate</button>
+                      <div class="flex justify-center">
+                        <button id="" class="w-28 btn btn-accent">Calculate</button>
+                      </div>
                     </div>
                   </div>
                    <!-- card 3-->
@@ -50,11 +54,13 @@
                       <h2 class="card-title">Parallelogram</h2>
                       <p>Area(A) = b x h</p>
                       <div class="flex gap-3">
-                        <input class="block rounded p-2 " type="number" placeholder="base in cm">
-                      <input class="block rounded p-2 " type="number" placeholder="height in cm">
+                        <input class="w-28 block rounded p-2 " type="number" placeholder="base in cm">
+                      <input class="w-28 block rounded p-2 " type="number" placeholder="height in cm">
                       </div>
                       <p>Area(A) : <span>0</span><span> cm<sup>2</sup></span></p>
-                      <button class="btn btn-accent">Calculate</button>
+                      <div class="flex justify-center">
+                        <button id="" class="w-28 btn btn-accent">Calculate</button>
+                      </div>
                     </div>
                   </div>
                    <!-- card 4 -->
@@ -64,11 +70,13 @@
                       <h2 class="card-title">Rhombus</h2>
                       <p>Area(A) = 0.5 x <span>d<sub>1</sub> </span> x <span>d<sub>1</sub></p>
                       <div class="flex gap-3">
-                        <input class="block rounded p-2 " type="number" placeholder="d1 in cm">
-                      <input class="block rounded p-2 " type="number" placeholder="d2 in cm">
+                        <input class="w-28 block rounded p-2 " type="number" placeholder="d1 in cm">
+                      <input class="w-28 block rounded p-2 " type="number" placeholder="d2 in cm">
                       </div>
                       <p>Area : <span>0</span><span> cm<sup>2</sup></span></p>
-                      <button class="btn btn-accent">Calculate</button>
+                      <div class="flex justify-center">
+                        <button id="" class="w-28 btn btn-accent">Calculate</button>
+                      </div>
                     </div>
                   </div>
                    <!-- card 5 -->
@@ -78,11 +86,13 @@
                       <h2 class="card-title">Pentagon</h2>
                       <p>Area(A) = 0.5 x p x b</p>
                       <div class="flex gap-3">
-                        <input class="block rounded p-2 " type="number" placeholder="p in cm">
-                      <input class="block rounded p-2 " type="number" placeholder="b in cm">
+                        <input class="w-28 block rounded p-2 " type="number" placeholder="p in cm">
+                      <input class="w-28 block rounded p-2 " type="number" placeholder="b in cm">
                       </div>
                       <p>Area : <span>0</span><span> cm<sup>2</sup></span></p>
-                      <button class="btn btn-accent">Calculate</button>
+                      <div class="flex justify-center">
+                        <button id="" class="w-28 btn btn-accent">Calculate</button>
+                      </div>
                     </div>
                   </div>
                    <!-- card 6 -->
@@ -93,18 +103,26 @@
                       <p>Area(A) = &#120645;ab
                     </p>
                       <div class="flex gap-3">
-                        <input class="block rounded p-2 " type="number" placeholder="a in cm">
-                      <input class="block rounded p-2 " type="number" placeholder="b in cm">
+                        <input class="w-28 block rounded p-2 " type="number" placeholder="a in cm">
+                      <input class="w-28 block rounded p-2 " type="number" placeholder="b in cm">
                       </div>
                       <p>Area : <span>0</span><span> cm<sup>2</sup></span></p>
-                      <button class="btn btn-accent">Calculate</button>
+                      <div class="flex justify-center">
+                        <button id="" class="w-28 btn btn-accent">Calculate</button>
+                      </div>
                     </div>
                   </div>
             </div>
 
             <!-- calculation container  -->
-            <div class="w-52">
-                <h1>hello1</h1>
+            <div class="w-80 m-12 border p-8">
+                <div>
+                  <h2 class="text-2xl text-center">Area calculation</h2>
+                  <!-- area container  -->
+                  <div id="area-calculation-container" class="container my-8">
+                    
+                  </div>
+                </div>
             </div>
         </div>
     </section>

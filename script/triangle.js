@@ -13,9 +13,32 @@ document.getElementById('triangle-area-btn').addEventListener('click',function (
         alert('Invalid input')
     } else{
     document.getElementById('triangle-area').innerText = .5 * base * height;
+    const areaCalc = document.createElement('div');
+    areaCalc.innerHTML = ` <div id="">
+    <span>Triangle </span> Area : <span class="text-xl font-medium"> <span id="m2-conversion">
+      <span id="calculation-triangle-area">00</span> <span>cm<sup>2</sup></span>
+    <button class="ml-2 btn btn-accent p-1" id="convert-m2">Convert to <span>m<sup>2</sup></span></button>
+    </span> </span>
+  </div>`;
+  const areaCalcContainer = document.getElementById('area-calculation-container').appendChild(areaCalc);
+    document.getElementById('calculation-triangle-area').innerText = .5 * base * height;
     }
-    
     document.getElementById('triangle-height').value = '';
     document.getElementById('triangle-base').value = '';
+
+
+    
+document.getElementById('convert-m2').addEventListener('click',function (){
+    console.log("m2 clicked");
+    
+    let cm2 = document.getElementById('calculation-triangle-area').innerText;
+    base = parseFloat(cm2);
+    let m2 = cm2 / 100;
+    
+    document.getElementById('m2-conversion').innerHTML = `<span id="calculation-triangle-area">${m2}</span> <span>m<sup>2</sup></span></span>`;
+    console.log('done');
+    
+});
+
     return
 });
