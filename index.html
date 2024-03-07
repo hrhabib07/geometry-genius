@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="bg-white" lang="en">
+<html class="" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,7 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="styles/style.css">
 </head>
-<body class="bg-white m-0 p-0">
+<body class=" m-0 p-0">
     <section class="container mx-auto">
         <!-- two section container  -->
         <div class="flex flex-row md:flexcol">
@@ -21,11 +21,11 @@
                       <h2 class="card-title">Triangle</h2>
                       <p>Area = 0.5 x b x h</p>
                       <div class="flex gap-3">
-                        <input class="block rounded p-2 bg-gray-100" type="number" placeholder="base">
-                      <input class="block rounded p-2 bg-gray-100" type="number" placeholder="height">
+                        <input id="triangle-base" class="block rounded p-2 " type="number" placeholder="base in cm"> 
+                      <input id="triangle-height" class="block rounded p-2 " type="number" placeholder="height in cm">
                       </div>
-                      <p>Area : <span>0</span><span> cm<sup>2</sup></span></p>
-                      <button class="btn btn-accent">Calculate</button>
+                      <p>Area : <span id="triangle-area">0</span><span> cm<sup>2</sup></span></p>
+                      <button id="triangle-area-btn" class="btn btn-accent">Calculate</button>
 
                     </div>
                   </div>
@@ -36,8 +36,8 @@
                       <h2 class="card-title">Rectangle</h2>
                       <p>Area = w x l</p>
                       <div class="flex gap-3">
-                        <input class="block rounded p-2 bg-gray-100" type="number" placeholder="width">
-                      <input class="block rounded p-2 bg-gray-100" type="number" placeholder="length">
+                        <input class="block rounded p-2 " type="number" placeholder="width in cm">
+                      <input class="block rounded p-2 " type="number" placeholder="length in cm">
                       </div>
                       <p>Area : <span>0</span><span> cm<sup>2</sup></span></p>
                       <button class="btn btn-accent">Calculate</button>
@@ -50,8 +50,8 @@
                       <h2 class="card-title">Parallelogram</h2>
                       <p>Area(A) = b x h</p>
                       <div class="flex gap-3">
-                        <input class="block rounded p-2 bg-gray-100" type="number" placeholder="base">
-                      <input class="block rounded p-2 bg-gray-100" type="number" placeholder="height">
+                        <input class="block rounded p-2 " type="number" placeholder="base in cm">
+                      <input class="block rounded p-2 " type="number" placeholder="height in cm">
                       </div>
                       <p>Area(A) : <span>0</span><span> cm<sup>2</sup></span></p>
                       <button class="btn btn-accent">Calculate</button>
@@ -64,8 +64,8 @@
                       <h2 class="card-title">Rhombus</h2>
                       <p>Area(A) = 0.5 x <span>d<sub>1</sub> </span> x <span>d<sub>1</sub></p>
                       <div class="flex gap-3">
-                        <input class="block rounded p-2 bg-gray-100" type="number" placeholder="d1">
-                      <input class="block rounded p-2 bg-gray-100" type="number" placeholder="d2">
+                        <input class="block rounded p-2 " type="number" placeholder="d1 in cm">
+                      <input class="block rounded p-2 " type="number" placeholder="d2 in cm">
                       </div>
                       <p>Area : <span>0</span><span> cm<sup>2</sup></span></p>
                       <button class="btn btn-accent">Calculate</button>
@@ -78,8 +78,8 @@
                       <h2 class="card-title">Pentagon</h2>
                       <p>Area(A) = 0.5 x p x b</p>
                       <div class="flex gap-3">
-                        <input class="block rounded p-2 bg-gray-100" type="number" placeholder="p">
-                      <input class="block rounded p-2 bg-gray-100" type="number" placeholder="b">
+                        <input class="block rounded p-2 " type="number" placeholder="p in cm">
+                      <input class="block rounded p-2 " type="number" placeholder="b in cm">
                       </div>
                       <p>Area : <span>0</span><span> cm<sup>2</sup></span></p>
                       <button class="btn btn-accent">Calculate</button>
@@ -93,8 +93,8 @@
                       <p>Area(A) = &#120645;ab
                     </p>
                       <div class="flex gap-3">
-                        <input class="block rounded p-2 bg-gray-100" type="number" placeholder="a">
-                      <input class="block rounded p-2 bg-gray-100" type="number" placeholder="b">
+                        <input class="block rounded p-2 " type="number" placeholder="a in cm">
+                      <input class="block rounded p-2 " type="number" placeholder="b in cm">
                       </div>
                       <p>Area : <span>0</span><span> cm<sup>2</sup></span></p>
                       <button class="btn btn-accent">Calculate</button>
@@ -103,10 +103,12 @@
             </div>
 
             <!-- calculation container  -->
-            <div class="w-92">
+            <div class="w-52">
                 <h1>hello1</h1>
             </div>
         </div>
     </section>
+    <script src="script/triangle.js"></script>
+    <script src="script/function.js"></script>
 </body>
 </html>
