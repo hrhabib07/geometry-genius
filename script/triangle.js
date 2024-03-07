@@ -5,6 +5,7 @@ document.getElementById('triangle-area-btn').addEventListener('click',function (
     let height = document.getElementById('triangle-height').value;
     height = parseFloat(height);
     
+    
 
     if(!base || !height ){
         return

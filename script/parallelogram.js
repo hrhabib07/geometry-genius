@@ -4,20 +4,38 @@ document.getElementById('para-area-calc-btn').addEventListener('click',function 
     paraBase = parseFloat(paraBase);
     let paraHeight = document.getElementById('para-height').value;
     paraHeight = parseFloat(paraHeight);
-    if(!paraBase || !paraHeight ){
+    const doesExist = document.getElementById('m2-conversion-para');
+    const childElementID = document.getElementById('para-exist-checker');
+    if( !paraBase || !paraHeight ){
         return
-    } else if( paraBase <= 0 || paraHeight <= 0){
+    }  else if( paraBase <= 0 || paraHeight <= 0){
         alert('Invalid input')
     } else{
-    const areaCalc = document.createElement('div');
-    areaCalc.innerHTML = ` <div id="">
-    <span>Parallelogram </span> Area : <span class="text-xl font-medium"> <span id="m2-conversion-para">
-      <span id="calculation-para-area">00</span> <span>cm<sup>2</sup></span>
-    <button class="ml-2 btn btn-accent p-1" id="convert-m2-para">Convert to <span>m<sup>2</sup></span></button>
-    </span> </span>
-  </div>`;
-  document.getElementById('area-calculation-container').appendChild(areaCalc);
-    document.getElementById('calculation-para-area').innerText =  paraBase * paraHeight;
+        if (doesExist){
+            document.getElementById('area-calculation-container').removeChild(childElementID);
+            const areaCalc = document.createElement('div');
+            areaCalc.setAttribute('id', 'para-exist-checker')
+            areaCalc.innerHTML = ` <div>
+            <span>Parallelogram </span> Area : <span class="text-xl font-medium"> <span id="m2-conversion-para">
+              <span id="calculation-para-area">00</span> <span>cm<sup>2</sup></span>
+            <button class="ml-2 btn btn-accent p-1" id="convert-m2-para">Convert to <span>m<sup>2</sup></span></button>
+            </span> </span>
+          </div>`;
+          document.getElementById('area-calculation-container').appendChild(areaCalc);
+            document.getElementById('calculation-para-area').innerText =  paraBase * paraHeight;
+        } else{
+            const areaCalc = document.createElement('div');
+            areaCalc.setAttribute('id', 'para-exist-checker')
+            areaCalc.innerHTML = ` <div>
+            <span>Parallelogram </span> Area : <span class="text-xl font-medium"> <span id="m2-conversion-para">
+              <span id="calculation-para-area">00</span> <span>cm<sup>2</sup></span>
+            <button class="ml-2 btn btn-accent p-1" id="convert-m2-para">Convert to <span>m<sup>2</sup></span></button>
+            </span> </span>
+          </div>`;
+          document.getElementById('area-calculation-container').appendChild(areaCalc);
+            document.getElementById('calculation-para-area').innerText =  paraBase * paraHeight;
+        }
+   
     }
     document.getElementById('para-base').value = '';
     document.getElementById('para-height').value = '';

@@ -4,12 +4,18 @@ document.getElementById('rectangle-area-calc-btn').addEventListener('click',func
     width = parseFloat(width);
     let length = document.getElementById('rectangle-length').value;
     length = parseFloat(length);
+    const doesExist = document.getElementById('m2-conversion');
+    const childElementID = document.getElementById('rec-exist-checker');
     if(!width || !length ){
         return
     } else if( width <= 0 || length <= 0){
         alert('Invalid input')
     } else{
+        if(doesExist){
+            document.getElementById('area-calculation-container').removeChild(childElementID);
+            
     const areaCalc = document.createElement('div');
+    areaCalc.setAttribute('id', "rec-exist-checker")
     areaCalc.innerHTML = ` <div id="">
     <span>Rectangle </span> Area : <span class="text-xl font-medium"> <span id="m2-conversion">
       <span id="calculation-rectangle-area">00</span> <span>cm<sup>2</sup></span>
@@ -18,6 +24,20 @@ document.getElementById('rectangle-area-calc-btn').addEventListener('click',func
   </div>`;
   document.getElementById('area-calculation-container').appendChild(areaCalc);
     document.getElementById('calculation-rectangle-area').innerText =  width * length;
+
+        } else{
+
+            const areaCalc = document.createElement('div');
+            areaCalc.setAttribute('id', "rec-exist-checker")
+            areaCalc.innerHTML = ` <div id="">
+            <span>Rectangle </span> Area : <span class="text-xl font-medium"> <span id="m2-conversion">
+              <span id="calculation-rectangle-area">00</span> <span>cm<sup>2</sup></span>
+            <button class="ml-2 btn btn-accent p-1" id="convert-m2-rectangle">Convert to <span>m<sup>2</sup></span></button>
+            </span> </span>
+          </div>`;
+          document.getElementById('area-calculation-container').appendChild(areaCalc);
+            document.getElementById('calculation-rectangle-area').innerText =  width * length;
+        }
     }
     document.getElementById('rectangle-width').value = '';
     document.getElementById('rectangle-length').value = '';
