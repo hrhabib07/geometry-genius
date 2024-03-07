@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <section class="container mx-auto my-12">
+        <!-- two section container  -->
+        <div class="flex flex-row md:flexcol">
+            <!-- area container  -->
+            <div class="flex-1 grid gap-3 gird-row md:grid-cols-3">
+                <!-- card -->
+                <div class="card card-compact bg-base-100 shadow-xl">
+                    <figure><img src="images/triangle.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Triangle</h2>
+                      <p>Area = 0.5 x b x h</p>
+                      <div class="flex gap-3">
+                        <input class="block rounded p-2" type="number" placeholder="base">
+                      <input class="block rounded p-2" type="number" placeholder="height">
+                      </div>
+                      <p>Area : <span>0</span><span> cm<sup>2</sup></span></p>
+                      <button class="btn btn-accent">Calculate</button>
+
+                    </div>
+                  </div>
+                   <!-- card -->
+                <div class="card card-compact bg-base-100 shadow-xl">
+                    <figure><img src="images/rectangle.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Rectangle</h2>
+                      <p>Area = w x l</p>
+                      <div class="flex gap-3">
+                        <input class="block rounded p-2" type="number" placeholder="width">
+                      <input class="block rounded p-2" type="number" placeholder="length">
+                      </div>
+                      <p>Area : <span>0</span><span> cm<sup>2</sup></span></p>
+                    </div>
+                  </div>
+            </div>
+
+            <!-- calculation container  -->
+            <div>
+                <h1>hello1</h1>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
