@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="bg-white" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,21 +8,21 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
-    <section class="container mx-auto my-12">
+<body class="bg-white m-0 p-0">
+    <section class="container mx-auto">
         <!-- two section container  -->
         <div class="flex flex-row md:flexcol">
             <!-- area container  -->
             <div class="flex-1 grid gap-3 gird-row md:grid-cols-3">
                 <!-- card 1 -->
-                <div class="card card-compact bg-base-100 shadow-xl">
+                <div class="card  card-compact  shadow-xl p-4 m-4">
                     <figure><img src="images/triangle.png" alt="Shoes" /></figure>
                     <div class="card-body">
                       <h2 class="card-title">Triangle</h2>
                       <p>Area = 0.5 x b x h</p>
                       <div class="flex gap-3">
-                        <input class="block rounded p-2" type="number" placeholder="base">
-                      <input class="block rounded p-2" type="number" placeholder="height">
+                        <input class="block rounded p-2 bg-gray-100" type="number" placeholder="base">
+                      <input class="block rounded p-2 bg-gray-100" type="number" placeholder="height">
                       </div>
                       <p>Area : <span>0</span><span> cm<sup>2</sup></span></p>
                       <button class="btn btn-accent">Calculate</button>
@@ -30,71 +30,71 @@
                     </div>
                   </div>
                    <!-- card 2-->
-                <div class="card card-compact bg-base-100 shadow-xl">
+                <div class="card card-compact  shadow-xl p-4 m-4">
                     <figure><img src="images/rectangle.png" alt="Shoes" /></figure>
                     <div class="card-body">
                       <h2 class="card-title">Rectangle</h2>
                       <p>Area = w x l</p>
                       <div class="flex gap-3">
-                        <input class="block rounded p-2" type="number" placeholder="width">
-                      <input class="block rounded p-2" type="number" placeholder="length">
+                        <input class="block rounded p-2 bg-gray-100" type="number" placeholder="width">
+                      <input class="block rounded p-2 bg-gray-100" type="number" placeholder="length">
                       </div>
                       <p>Area : <span>0</span><span> cm<sup>2</sup></span></p>
                       <button class="btn btn-accent">Calculate</button>
                     </div>
                   </div>
                    <!-- card 3-->
-                <div class="card card-compact bg-base-100 shadow-xl">
+                <div class="card card-compact  shadow-xl p-4 m-4">
                     <figure><img src="images/parallelogram.png" alt="Shoes" /></figure>
                     <div class="card-body">
                       <h2 class="card-title">Parallelogram</h2>
                       <p>Area(A) = b x h</p>
                       <div class="flex gap-3">
-                        <input class="block rounded p-2" type="number" placeholder="base">
-                      <input class="block rounded p-2" type="number" placeholder="height">
+                        <input class="block rounded p-2 bg-gray-100" type="number" placeholder="base">
+                      <input class="block rounded p-2 bg-gray-100" type="number" placeholder="height">
                       </div>
                       <p>Area(A) : <span>0</span><span> cm<sup>2</sup></span></p>
                       <button class="btn btn-accent">Calculate</button>
                     </div>
                   </div>
                    <!-- card 4 -->
-                <div class="card card-compact bg-base-100 shadow-xl">
+                <div class="card card-compact  shadow-xl p-4 m-4">
                     <figure><img src="images/rhombus.png" alt="Shoes" /></figure>
                     <div class="card-body">
                       <h2 class="card-title">Rhombus</h2>
                       <p>Area(A) = 0.5 x <span>d<sub>1</sub> </span> x <span>d<sub>1</sub></p>
                       <div class="flex gap-3">
-                        <input class="block rounded p-2" type="number" placeholder="d1">
-                      <input class="block rounded p-2" type="number" placeholder="d2">
+                        <input class="block rounded p-2 bg-gray-100" type="number" placeholder="d1">
+                      <input class="block rounded p-2 bg-gray-100" type="number" placeholder="d2">
                       </div>
                       <p>Area : <span>0</span><span> cm<sup>2</sup></span></p>
                       <button class="btn btn-accent">Calculate</button>
                     </div>
                   </div>
                    <!-- card 5 -->
-                <div class="card card-compact bg-base-100 shadow-xl">
+                <div class="card card-compact  shadow-xl p-4 m-4">
                     <figure><img src="images/pentagon.png" alt="Shoes" /></figure>
                     <div class="card-body">
                       <h2 class="card-title">Pentagon</h2>
                       <p>Area(A) = 0.5 x p x b</p>
                       <div class="flex gap-3">
-                        <input class="block rounded p-2" type="number" placeholder="p">
-                      <input class="block rounded p-2" type="number" placeholder="b">
+                        <input class="block rounded p-2 bg-gray-100" type="number" placeholder="p">
+                      <input class="block rounded p-2 bg-gray-100" type="number" placeholder="b">
                       </div>
                       <p>Area : <span>0</span><span> cm<sup>2</sup></span></p>
                       <button class="btn btn-accent">Calculate</button>
                     </div>
                   </div>
                    <!-- card 6 -->
-                <div class="card card-compact bg-base-100 shadow-xl">
+                <div class="card card-compact  shadow-xl p-4 m-4">
                     <figure><img src="images/ellipse.png" alt="Shoes" /></figure>
                     <div class="card-body">
                       <h2 class="card-title">Ellipse</h2>
                       <p>Area(A) = &#120645;ab
                     </p>
                       <div class="flex gap-3">
-                        <input class="block rounded p-2" type="number" placeholder="a">
-                      <input class="block rounded p-2" type="number" placeholder="b">
+                        <input class="block rounded p-2 bg-gray-100" type="number" placeholder="a">
+                      <input class="block rounded p-2 bg-gray-100" type="number" placeholder="b">
                       </div>
                       <p>Area : <span>0</span><span> cm<sup>2</sup></span></p>
                       <button class="btn btn-accent">Calculate</button>
@@ -103,7 +103,7 @@
             </div>
 
             <!-- calculation container  -->
-            <div class="w-96">
+            <div class="w-92">
                 <h1>hello1</h1>
             </div>
         </div>
